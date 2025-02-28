@@ -22,7 +22,7 @@ static const char *TAG = "work";
 
 void app_main(void)
 {
-  // ECN控制初始化
+  // 初始化
   ESP_LOGI(TAG, "Init");
   //硬件使能引脚初始化
   device_manager_init();
@@ -30,7 +30,7 @@ void app_main(void)
   boost_controller_init();
   change_voltage(40, max_voltage);
   pwm_controller_init();
-  // // 使能时钟
+  //开启任务
   uart_controller_init();
   wifi_init();
   xTaskCreate(uart_rx_task, "uart_rx_task", 8192, NULL, 6, NULL);
