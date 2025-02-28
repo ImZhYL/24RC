@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"my_tcp_client.h": "c",
+			"pwm_controller.h": "c",
+			"cstdint": "c",
+			"gpio_table.h": "c",
+			"boost_controller.h": "c",
+			"esp_timer.h": "c",
+			"led_controller.h": "c",
+			"stdio.h": "c",
+			"esp_log.h": "c"
+		}
+	}
+}
